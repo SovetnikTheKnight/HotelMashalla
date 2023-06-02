@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title> Assignment 5 Web Page Layout</title>
+    <style>
+        * {
+            margin: 0; padding: 0; border: 0; box-sizing:border-box;
+        }
+        body {
+            font-size: 24px;
+            background-color:#808080;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        } 
+        #header {
+            text-align:center;
+            padding:20px;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+        #navigation {
+            flex: auto;
+            text-align: right;
+            flex-flow: row wrap;
+            padding: 10px;
+            text-decoration: none;
+            text-decoration-color: #000000;
+            height: 100%;
+            justify-content: flex-start;
+            background-color: aquamarine;
+            margin-bottom: 20px;
+        }
+        navigation:link {
+            text-decoration: none;
+        }
+
+        navigation:visited {
+            text-decoration: none;
+        }
+
+        navigation:hover {
+            text-decoration: underline;
+        }
+
+        navigation:active {
+            text-decoration: underline;
+        }
+            #hero1 {
+            flex: auto;
+            height: 100%;
+            background-color:antiquewhite;
+            display: flex;  flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            margin:20px;
+        }
+        article {
+            flex: 3 0 ;
+            flex-wrap: wrap;
+            background-color:aquamarine;
+        }
+        aside {
+            flex: 1 0 ;
+            background-color: white;
+        }
+
+        #container {
+            display: flex;
+            flex:auto;
+            flex-flow: row wrap;
+            width: 75%;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+        footer {
+            text-align:center;
+            flex: 3;
+            flex-flow: row wrap;
+            height: 50px;
+            background-color: aliceblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="header">
+            <h1>Отель Масалла</h1>
+        </div>
+
+        <div id="navigation">
+            <a href='/ht421412654ml/'>Авиабилеты</a> |
+            <a href='/csghfghfgs/'>Ж/д билеты</a> |
+            <a href='/jshfghfg/'>Автобусы</a> |
+            <a href='/jqnvbnvbuery/'>Командировки</a>
+            <a href='/ht421412654ml/'>Приключения</a> |
+            <a href='/ht421412654ml/'>Электрички</a> |
+            <a href='/ht421412654ml/'>Справочная</a> |
+        </div>
+
+        <div id="hero1">
+            <article>Добро пожаловать на сайт нашего отеля! Здесь вы можете забронировать свой номер или целую поездку. Также мы предлагаем туристические услуги, такие как проезды по городу и курорты для всей семьи. Мы также можем похвастаться огромным ассортиментом китайской, арабской и индийской кухне. которая понравится самым настоящим гурманам! Мы всегда будем ждать вас в нашем отеле! </article>
+            <aside> <img src="yee.jpeg" width="100%" height="100%"></aside>
+        </div>
+        <footer>При использовании этого сайте вы соглашаетесь с условием нашего соглашения бла-бла-бл</footer>
+
+
+    </div>
+
+</body>
+</html>
